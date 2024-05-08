@@ -11,7 +11,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import tailwind from "./../../public/logo.png";
+import logo from "./../../public/logo.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
@@ -30,7 +30,7 @@ function classNames(...classes: any[]): string {
 export default function NavBar() {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className="  text-black fixed right-0 left-0 z-50  backdrop-blur-md ">
+    <Disclosure as="nav" className="  text-black fixed right-0 left-0 z-50  backdrop-blur-md border-b">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
@@ -48,14 +48,15 @@ export default function NavBar() {
                 </DisclosureButton>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-                <div className="flex flex-shrink-0 items-center absolute left-0 ">
+                <div className="flex flex-shrink-0 items-center absolute left-0 top-1 ">
                   <Image
-                    className="h-8 w-auto"
-                    src={tailwind}
+                    className="h-12 w-auto"
+                    src={logo}
                     alt="Your Company"
+                    width={100}
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block ">
+                <div className="hidden sm:ml-6 sm:block  ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -74,7 +75,7 @@ export default function NavBar() {
                     ))}
                   </div>
                 </div>
-                <div className="absolute right-0 hidden sm:block">
+                <div className="absolute right-0 hidden sm:block top-3">
                   <Button className="bg-blue-main">Contact us</Button>
                 </div>
               </div>

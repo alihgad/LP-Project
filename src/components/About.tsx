@@ -17,7 +17,7 @@ export default function About() {
             technology and creative solutions.
           </p>
           </div>
-          <Button className=" bg-blue-main absolute right-0 rounded-xl"> <Link href={'/about'}>About us</Link></Button>
+          <Button className=" bg-blue-main absolute right-0 mr-5 sm:mr-0 rounded-xl"> <Link href={'/about'}>About us</Link></Button>
         </div>
       </section>
     </>
