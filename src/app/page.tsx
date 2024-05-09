@@ -1,8 +1,9 @@
 import React from "react";
 
-import Banner from "@/components/Banner";
-import About from "@/components/About";
-import Hero from "@/components/Hero";
+import Banner from "@/components/(Home page)/Banner";
+import About from "@/components/(Home page)/About";
+import Hero from "@/components/(Home page)/Hero";
+import Services from "@/components/(Home page)/Services";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Banner />
       </Hero>
       <About />
+      <Services/>
     </>
   );
 }

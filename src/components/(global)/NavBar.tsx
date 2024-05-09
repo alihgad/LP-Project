@@ -2,16 +2,11 @@
 import { Fragment, useState } from "react";
 import {
   Disclosure,
-  Menu,
-  MenuItem,
-  MenuItems,
-  MenuButton,
-  Transition,
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "./../../public/logo.png";
+import logo from "./../../../public/logo.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";

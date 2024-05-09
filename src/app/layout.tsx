@@ -3,7 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/(global)/NavBar";
 import 'keen-slider/keen-slider.min.css'
 
 const fontSans = FontSans({
