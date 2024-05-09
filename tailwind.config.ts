@@ -27,7 +27,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        // sans: ["var(--font-sans)", ...fontFamily.sans],
+        syne : ["var(--font-syne)", ...fontFamily.sans],
       },
       colors: {
         'blue-main': 'rgba(79, 70, 229, 1)',

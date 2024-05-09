@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Open_Sans , Syne} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import NavBar from "@/components/(global)/NavBar";
 import 'keen-slider/keen-slider.min.css'
 
-const fontSans = FontSans({
+const open_sans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
+
+const syne = Syne({
+  subsets: ['latin'],
+  variable: '--font-syne',
+})
+
+
 
 export const metadata: Metadata = {
   title: "Landing page",
@@ -26,11 +33,11 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased ",
-          fontSans.variable
+          syne.className
         )}
       >
         <NavBar/>
-        <main>{children}</main>
+        <main className={`${syne.className }  ${open_sans.className}`}>{children}</main>
       </body>
     </html>
   );

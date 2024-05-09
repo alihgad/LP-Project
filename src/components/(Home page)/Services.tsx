@@ -5,35 +5,37 @@ import Image from "next/image";
 import display from "./../../../public/services/desktop.png";
 import mobile from "./../../../public/services/mobil-black.png";
 import AI from "./../../../public/services/ai.png";
+import SectionHeading from "../ui/SectionHeading";
 
 export default function Services() {
   return (
     <>
       <section className="bg-white py-28">
         <div className="container">
-          <div className="flex justify-center items-center flex-col">
-            <h3 className="uppercase tracking-[0.4em] text-blue-main font-semibold ">
-              our services
-            </h3>
-            <p className="text-5xl my-3">Let’s work together with our us</p>
-          </div>
+          <SectionHeading
+            heading="OUR SERCIVES"
+            body="Let’s work together with our us"
+          />
           <div className="mt-5 ">
             <div className="grid sm:grid-cols-9 gap-x-5 gap-y-5">
-              <Card className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <Card id="card" className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+                <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 invisible group-hover:visible "></div>
                 <CardContent className="grid sm:grid-cols-2 py-[40px] pl-[32px] ">
-                  <div className="text ">
-                    <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
-                      <i className="fa-solid fa-xl fa-globe"></i>
+                  <div className="text   ">
+                    <div className=" w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5 z-0 ">
+                      <i className="fa-solid fa-xl fa-globe relative z-20"></i>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5">Website Dev</h3>
-                    <p className="font-thin mb-5">
+                    <h3 className="text-4xl font-bold mb-5 relative z-20 ">
+                      Website Dev
+                    </h3>
+                    <p className="font-thin mb-5 relative z-20">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
                     <Link
                       href={"/contact"}
                       target="_blank"
-                      className="flex gap-x-2 items-center "
+                      className="flex gap-x-2 items-center relative z-20 "
                     >
                       <p className="underline">Start with us</p>
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
@@ -45,21 +47,22 @@ export default function Services() {
                 </CardContent>
               </Card>
 
-              <Card className="sm:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <Card id='card' className="sm:col-span-4   overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+                <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
                 <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] ">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
-                      <i className="fa-solid fa-xl fa-pen-nib"></i>
+                      <i className="fa-solid fa-xl fa-pen-nib relative z-20"></i>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5">UI/UX Design</h3>
-                    <p className="font-thin mb-5">
+                    <h3 className="text-4xl font-bold mb-5 relative z-20">UI/UX Design</h3>
+                    <p className="font-thin mb-5 relative z-20">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
                     <Link
                       href={"/contact"}
                       target="_blank"
-                      className="flex gap-x-2 items-center "
+                      className="flex gap-x-2 items-center relative z-20 "
                     >
                       <p className="underline">Start with us</p>
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
@@ -71,21 +74,22 @@ export default function Services() {
                 </CardContent>
               </Card>
 
-              <Card className="sm:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white pt-5  rounded-3xl">
+              <Card id="card" className="sm:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white pt-5  relative rounded-3xl">
+              <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
                 <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] relative">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
-                      <i className="fa-solid fa-xl fa-tag"></i>
+                      <i className="fa-solid fa-xl fa-tag relative z-20"></i>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5">AI Integration</h3>
-                    <p className="font-thin mb-5">
+                    <h3 className="text-4xl font-bold mb-5 relative z-20">AI Integration</h3>
+                    <p className="font-thin mb-5 relative z-20">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
                     <Link
                       href={"/contact"}
                       target="_blank"
-                      className="flex gap-x-2 items-center "
+                      className="flex gap-x-2 items-center  relative z-20"
                     >
                       <p className="underline">Start with us</p>
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
@@ -97,23 +101,25 @@ export default function Services() {
                 </CardContent>
               </Card>
 
-              <Card className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <Card id="card" className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
+
                 <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] ">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
-                      <i className="fa-solid fa-xl fa-bag-shopping"></i>
+                      <i className="fa-solid fa-xl fa-bag-shopping relative a-20"></i>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5">
+                    <h3 className="text-4xl font-bold mb-5 relative a-20">
                       Mobile app development
                     </h3>
-                    <p className="font-thin mb-5">
+                    <p className="font-thin mb-5 relative a-20">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
                     <Link
                       href={"/contact"}
                       target="_blank"
-                      className="flex gap-x-2 items-center "
+                      className="flex gap-x-2 items-center relative a-20 "
                     >
                       <p className="underline">Start with us</p>
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
