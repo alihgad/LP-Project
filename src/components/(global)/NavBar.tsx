@@ -25,7 +25,7 @@ function classNames(...classes: any[]): string {
 export default function NavBar() {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className="  text-black fixed right-0 left-0 z-50  backdrop-blur-md border-b">
+    <Disclosure as="nav" className="  text-black fixed right-0 left-0 z-50  backdrop-blur-md border-b ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
