@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import NavBar from "@/components/NavBar";
+import 'keen-slider/keen-slider.min.css'
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased overflow-x-hidden",
+          "min-h-screen bg-background font-sans antialiased ",
           fontSans.variable
         )}
       >

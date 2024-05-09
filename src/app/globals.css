@@ -83,3 +83,11 @@
   #home > div {
     background-image:  radial-gradient( transparent,transparent, black 85%);
   }
+
+  .star{
+    width: 20rem !important;
+  }
+
+  .slider{
+    width: 1700px !important;
+  }
