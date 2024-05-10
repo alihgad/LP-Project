@@ -5,13 +5,15 @@ import About from "@/components/(Home page)/About";
 import Hero from "@/components/(Home page)/Hero";
 import Services from "@/components/(Home page)/Services";
 import Work from "@/components/(Home page)/Work";
-import Comments from "@/components/(Home page)/Comments";
+// import Comments from "@/components/(Home page)/Comments";
 import EmblaCarousel from "@/components/(Home page)/EmplaCarousal";
 import { EmblaOptionsType } from 'embla-carousel'
 import Comment from "@/components/(Home page)/Comment";
 
 export default function Home() {
-  const SLIDES = [<Comment  className="md:mx-0"/>,<Comment className="md:mx-0"/>, <Comment className="md:mx-0"/>]
+  
+  const SLIDES = [<Comment key={0} className="md:mx-0"/> , <Comment key={1} className="md:mx-0"/>, <Comment key={2} className="md:mx-0"/> , <Comment key={0} className="md:mx-0"/>]
+  
   const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
   return (
     <>

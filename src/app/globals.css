@@ -288,7 +288,7 @@
 
 }
 
-@media screen (max-width: 642px) {
+@media screen and (max-width: 642px) {
   .embla::after {
     width: 0% ;
   }
