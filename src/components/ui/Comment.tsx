@@ -1,18 +1,12 @@
-import React,{createContext} from "react";
-import SectionHeading from "../ui/SectionHeading";
+import React from 'react'
 import { Card, CardContent } from "../ui/card";
 import man from "./../../../public/man.png";
 import Image from "next/image";
-import CommentsCarousal from "../ui/CommentsCarousal";
 
-
-export default function Comments() {
+export default function Comment() {
   return (
-    <>
-    <section>
-      <div className="container py-5 mt-10 ">
-        <SectionHeading heading="our clients" body="what they say about us !" />
-        {/* <Card className="md:mx-28  rounded-3xl bg-[#666666] py-10">
+    <div>
+        <Card className="md:mx-28  rounded-3xl bg-[#666666] py-10">
           <CardContent className="p-0">
             <div className="md:grid grid-cols-10 gap-x-10">
               <div className="col-span-2 md:grid grid-cols-4">
@@ -57,11 +51,7 @@ export default function Comments() {
               </div>
             </div>
           </CardContent>
-        </Card> */}
-      <CommentsCarousal/>
-      </div>
-    </section>
-
-    </>
-  );
+        </Card>
+    </div>
+  )
 }

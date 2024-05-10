@@ -12,7 +12,7 @@ export default function Work() {
     <>
       <section>
         <div className="container py-5">
-          <div className="md-px-[60px] ">
+          <div className="md:px-[60px] ">
             <SectionHeading
               heading="OUR WORK"
               body="Witness Our Success Stories"
