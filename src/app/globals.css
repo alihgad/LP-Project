@@ -248,8 +248,9 @@
   }
 
   .embla::after {
-    width: 0% ;
+    width: 2% ;
   }
+  
 
   .embla__container{
     width: 100%;
@@ -285,6 +286,12 @@
 }
  
 
+}
+
+@media screen (max-width: 642px) {
+  .embla::after {
+    width: 0% ;
+  }
 }
 
 

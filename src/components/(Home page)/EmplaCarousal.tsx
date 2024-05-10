@@ -6,7 +6,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
 
 type PropType = {
-  slides: []
+  slides:any[],
   options?: EmblaOptionsType
 }
 
@@ -26,7 +26,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((content,index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{content }</div>
+              <div className="embla__slide__number" key={index}>{content}</div>
             </div>
           ))}
         </div>
