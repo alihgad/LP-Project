@@ -37,8 +37,9 @@ export default function RootLayout({
           syne.className
         )}
       >
-        <NavBar/>
+        <NavBar className="fixed right-0 left-0"/>
         <main className={`${syne.className }  ${open_sans.className}`}>{children}</main>
+        <NavBar className=" bg-black border-black"/>
       </body>
     </html>
   );

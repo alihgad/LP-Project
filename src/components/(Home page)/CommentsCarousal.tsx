@@ -59,7 +59,7 @@ export default function CommentsCarousal() {
             <Comment />
           </Slide>
         </Slider>
-        <DotGroup  showAsSelectedForCurrentSlideOnly={true} className="absolute right-1/2 translate-x-1/2 bottom-5">
+        <DotGroup  showAsSelectedForCurrentSlideOnly={true} className="absolute right-1/2 translate-x-1/2 bottom-1 md:bottom-5 ">
         <Dot slide={0} className="w-3 h-3 rounded-full mx-1 bg-[#666666]"/>
         <Dot slide={1} className="w-3 h-3 rounded-full mx-1 bg-[#666666]"/>
         <Dot slide={2} className="w-3 h-3 rounded-full mx-1 bg-[#666666]"/>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import display from "./../../../public/services/desktop.png";
 import mobile from "./../../../public/services/mobil-black.png";
 import AI from "./../../../public/services/ai.png";
-import SectionHeading from "../ui/SectionHeading";
+import SectionHeading from "./SectionHeading";
 
 export default function Services() {
   return (

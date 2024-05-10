@@ -115,4 +115,20 @@
   }
 }
 
+.first , .fourth{
+  width: 503px !important;
+  height: 465px !important;
+}
+
+.second , .therd{
+  width: 508px !important;
+  height: 375px !important;
+}
+
+.cont{
+  height: 950px !important;
+}
+
+
+
 

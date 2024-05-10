@@ -22,10 +22,12 @@ function classNames(...classes: any[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NavBar() {
+export default function NavBar({className}:{
+  className: string
+}) {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className="  text-black fixed right-0 left-0 z-50  backdrop-blur-md border-b ">
+    <Disclosure as="nav" className={` text-black  z-50  backdrop-blur-md border-b ${className}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
