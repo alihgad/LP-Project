@@ -11,8 +11,8 @@ import { EmblaOptionsType } from 'embla-carousel'
 import Comment from "@/components/(Home page)/Comment";
 
 export default function Home() {
-  const SLIDES = [<Comment className="md:mx-0"/>,<Comment className="md:mx-0"/>, <Comment className="md:mx-0"/>]
-  const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
+  // const SLIDES = [<Comment className="md:mx-0"/>,<Comment className="md:mx-0"/>, <Comment className="md:mx-0"/>]
+  // const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
   return (
     <>
       <Hero>
@@ -21,7 +21,7 @@ export default function Home() {
       <About />
       <Services/>
       <Work/>
-      <EmblaCarousel slides={SLIDES}  options={OPTIONS}/>
+      {/* <EmblaCarousel slides={SLIDES}  options={OPTIONS}/> */}
     </>
   );
 }
