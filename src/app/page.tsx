@@ -11,7 +11,6 @@ import { EmblaOptionsType } from 'embla-carousel'
 import Comment from "@/components/(Home page)/Comment";
 
 export default function Home() {
-  // eslint-disable-next-line react/jsx-key
   const SLIDES = [<Comment className="md:mx-0"/>,<Comment className="md:mx-0"/>, <Comment className="md:mx-0"/>]
   const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
   return (
@@ -22,7 +21,6 @@ export default function Home() {
       <About />
       <Services/>
       <Work/>
-      {/* <Comments/> */}
       <EmblaCarousel slides={SLIDES}  options={OPTIONS}/>
     </>
   );
