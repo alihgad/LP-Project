@@ -240,10 +240,15 @@
 @media screen and (max-width:640px) {
   #slider{
     height: 550px !important;
+
+}
+
+ .embla::before {
+    width: 3%;
   }
 
-  .embla::after , .embla::before {
-    width: 3%;
+  .embla::after {
+    width: 0%;
   }
 
   .embla__container{
@@ -259,6 +264,15 @@
     position: relative;
   
   }
+
+  .embla__slide__number{
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    overflow: hidden;
+}
  
 
 }
