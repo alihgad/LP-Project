@@ -3,10 +3,12 @@ import { Card, CardContent } from "../ui/card";
 import man from "./../../../public/man.png";
 import Image from "next/image";
 
-export default function Comment() {
+export default function Comment({className}:{
+  className:string
+}) {
   return (
-    <div>
-        <Card className="md:mx-28  rounded-3xl bg-[#666666] py-10">
+    <div className=''>
+        <Card className={`md:mx-28  rounded-3xl bg-[#666666] py-10 ${className}`}>
           <CardContent className="p-0">
             <div className="md:grid grid-cols-10 gap-x-10">
               <div className="col-span-2 md:grid grid-cols-4">
