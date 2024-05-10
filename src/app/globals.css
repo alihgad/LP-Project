@@ -237,7 +237,7 @@
 }
 
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:760px) {
   #slider{
     height: 550px !important;
 
@@ -272,6 +272,16 @@
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
     overflow: hidden;
+}
+
+.first , .fourth{
+  width: 100% !important;
+  height: 465px !important;
+}
+
+.second , .therd{
+  width: 100% !important;
+  height: 375px !important;
 }
  
 

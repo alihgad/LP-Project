@@ -17,10 +17,10 @@ export default function Services() {
             body="Let’s work together with our us"
           />
           <div className="mt-5 ">
-            <div className="grid sm:grid-cols-9 gap-x-5 gap-y-5">
-              <Card id="card" className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+            <div className="grid md:grid-cols-9 gap-x-5 gap-y-5">
+              <Card id="card" className="md:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
                 <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10  "></div>
-                <CardContent className="grid sm:grid-cols-2 py-[40px] pl-[32px] ">
+                <CardContent className="grid md:grid-cols-2 py-[40px] pl-[32px] ">
                   <div className="text   ">
                     <div className=" w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5 z-0 ">
                       <i className="fa-solid fa-xl fa-globe relative z-20"></i>
@@ -41,15 +41,15 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="hidden sm:block sm:absolute w-5/12 right-0 bottom-0">
+                  <div className="hidden md:block md:absolute w-5/12 right-0 bottom-0">
                     <Image src={display} alt="desktop" className="" />
                   </div>
                 </CardContent>
               </Card>
 
-              <Card id='card' className="sm:col-span-4   overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <Card id='card' className="md:col-span-4   overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
                 <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
-                <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] ">
+                <CardContent className="md:grid grid-cols-2 py-[40px] pl-[32px] ">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
                       <i className="fa-solid fa-xl fa-pen-nib relative z-20"></i>
@@ -68,15 +68,15 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className=" hidden sm:block absolute w-4/12 right-0 bottom-0 ">
+                  <div className=" hidden md:block absolute w-4/12 right-0 bottom-0 ">
                     <Image src={mobile} alt="mobile" className="" />
                   </div>
                 </CardContent>
               </Card>
 
-              <Card id="card" className="sm:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white pt-5  relative rounded-3xl">
+              <Card id="card" className="md:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white pt-5  relative rounded-3xl">
               <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
-                <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] relative">
+                <CardContent className="md:grid grid-cols-2 py-[40px] pl-[32px] relative">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
                       <i className="fa-solid fa-xl fa-tag relative z-20"></i>
@@ -95,16 +95,16 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className=" hidden sm:block absolute right-0 w-1/2">
+                  <div className=" hidden md:block absolute right-0 w-1/2">
                     <Image src={AI} alt="mobile" className="" />
                   </div>
                 </CardContent>
               </Card>
 
-              <Card id="card" className="sm:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
+              <Card id="card" className="md:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white pt-5 relative rounded-3xl">
               <div id="layer" className="absolute top-0 right-0 left-0 bottom-0  z-10 "></div>
 
-                <CardContent className="sm:grid grid-cols-2 py-[40px] pl-[32px] ">
+                <CardContent className="md:grid grid-cols-2 py-[40px] pl-[32px] ">
                   <div className="text ">
                     <div className="w-12 h-12 rounded-full bg-gray-400 flex justify-center items-center mb-5">
                       <i className="fa-solid fa-xl fa-bag-shopping relative z-20"></i>
@@ -125,7 +125,7 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="hidden sm:block absolute w-4/12 right-0 bottom-0">
+                  <div className="hidden md:block absolute w-4/12 right-0 bottom-0">
                     <Image src={mobile} alt="mobile" className="" />
                   </div>
                 </CardContent>

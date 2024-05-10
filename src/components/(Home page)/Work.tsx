@@ -18,7 +18,7 @@ export default function Work() {
               body="Witness Our Success Stories"
             />
             <div className="flex-col md:flex-row flex md:cont">
-              <div className="sm:w-50 px-5">
+              <div className="md:w-50 px-5">
                 <div className="md:first row-span-3 rounded-xl overflow-hidden mb-5">
                   <Image src={second} alt="second" className="first " />
                 </div>
