@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Open_Sans , Syne} from "next/font/google";
+import { Open_Sans, Syne } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import '@fortawesome/fontawesome-free/css/all.min.css'
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import NavBar from "@/components/(global)/NavBar";
-import 'keen-slider/keen-slider.min.css'
+import "keen-slider/keen-slider.min.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
@@ -12,11 +13,9 @@ const open_sans = Open_Sans({
 });
 
 const syne = Syne({
-  subsets: ['latin'],
-  variable: '--font-syne',
-})
-
-
+  subsets: ["latin"],
+  variable: "--font-syne",
+});
 
 export const metadata: Metadata = {
   title: "Landing page",
@@ -29,18 +28,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
+    <>
       <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased ",
-          syne.className
-        )}
-      >
-        <NavBar className="fixed right-0 left-0"/>
-        <main className={`${syne.className }  ${open_sans.className}`}>{children}</main>
-        <NavBar className=" bg-black border-black"/>
-      </body>
-    </html>
+        <body
+          className={cn(
+            "min-h-screen bg-background font-sans antialiased ",
+            syne.className
+          )}
+        >
+          <NavBar className="fixed right-0 left-0" />
+          <main className={`${syne.className}  ${open_sans.className}`}>
+            {children}
+            <SpeedInsights />
+          </main>
+          <NavBar className=" bg-black border-black" />
+        </body>
+      </html>
+    </>
   );
 }

@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import man from "./../../../public/man.png";
 import Image from "next/image";
 
-export default function Comment({ className }: { className: string }) {
+export default function Comment({ className }: { className?: string }) {
   return (
     <div className="">
       <Card
