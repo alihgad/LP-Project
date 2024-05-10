@@ -92,18 +92,6 @@
     width: 1700px !important;
   }
 
-  #layer{
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    background-color:  rgb(96 165 250 / 0.0);;
-}
-
- #card:hover #layer{
-  background-color:  rgb(96 165 250 / 0.5);;
-}
 
 #slider{
   height: 310px !important;
@@ -294,6 +282,19 @@
   }
   
 }
+
+
+#icon-bg{
+  background-color: gray;
+  box-shadow: -1px -1px 0px 0px rgb(255,255,255);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+
 
 
 

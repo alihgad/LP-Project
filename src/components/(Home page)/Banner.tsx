@@ -28,7 +28,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className="overflow-hidden bg-blue-banner py-5">
+      <div className="overflow-hidden bg-blue-banner py-5 font-open">
         <div ref={ref} className="keen-slider slider items-center">
           <div className="keen-slider__slide number-slide1">web developer</div>
           <Image

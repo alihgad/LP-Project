@@ -9,12 +9,15 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const open_sans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-open",
+  weight : 'variable'
 });
 
 const syne = Syne({
   subsets: ["latin"],
   variable: "--font-syne",
+  weight : 'variable'
+
 });
 
 export const metadata: Metadata = {
@@ -32,7 +35,7 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased ",
+            "min-h-screen bg-background  antialiased ",
             syne.className
           )}
         >

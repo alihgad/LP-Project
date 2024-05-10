@@ -10,11 +10,11 @@ export default function Hero({
     <section id="home">
       <div className="h-screen  text-white ">
         <div className="sm:container px-3  text-center flex-col  flex justify-center items-center h-full">
-          <p className=" sm:w-5/6 font-bold text-3xl sm:font-[700]  sm:text-6xl">
+          <p className=" sm:w-full   font-bold text-3xl sm:font-[700]  sm:text-[65px] leading-[60px]">
             We Make Great Digital Products For
             <span className="text-blue-main ml-1">Innovative Brands. </span>
           </p>
-          <p className="sm:text-lg sm:font-medium sm:w-[65%] mt-7">
+          <p className="sm:text-lg sm:font-medium sm:w-[65%] mt-7 font-open">
             we specialize in providing cutting-edge solutions for all your
             technological needs. With our team of skilled professionals and a
             passion for innovation, we help businesses transform their ideas
@@ -24,9 +24,9 @@ export default function Hero({
             <Input
               type="email"
               placeholder="Your work Email"
-              className="bg-transparent"
+              className="bg-transparent rounded-[15px]"
             />
-            <Button type="submit" className="bg-transparent border">
+            <Button type="submit" className="bg-transparent border border-blue-main rounded-[15px] text-blue-main">
               Book a call
             </Button>
           </div>
