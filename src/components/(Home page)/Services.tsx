@@ -127,7 +127,7 @@ export default function Services() {
                     </Link>
                   </div>
                   <div className=" hidden md:block absolute right-0 w-5/12  z-20">
-                    <Image src={AI} alt="AI" className="" />
+                    <Image src={AI} alt="AI" className=" " />
                   </div>
                 </CardContent>
               </Card>
@@ -171,6 +171,7 @@ export default function Services() {
                   </div>
                 </CardContent>
               </Card>
+
             </div>
             <div className="bottom"></div>
           </div>
