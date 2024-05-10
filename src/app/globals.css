@@ -237,7 +237,7 @@
 }
 
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:1400px) {
   #slider{
     height: 550px !important;
 
@@ -248,7 +248,7 @@
   }
 
   .embla::after {
-    width: 2% ;
+    width: 1.1% !important ;
   }
   
 
@@ -292,6 +292,7 @@
   .embla::after {
     width: 0% ;
   }
+  
 }
 
 

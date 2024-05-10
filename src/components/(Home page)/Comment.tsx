@@ -7,7 +7,7 @@ export default function Comment({ className }: { className?: string }) {
   return (
     <div className="">
       <Card
-        className={`md:mx-28  rounded-3xl bg-[#666666]  py-10 ${className}`}
+        className={`md:mx-28  rounded-3xl bg-[#666666]   py-10 ${className}`}
       >
         <CardContent className="p-0">
           <div className="md:grid grid-cols-10 gap-x-10 sm:flex">
@@ -18,7 +18,7 @@ export default function Comment({ className }: { className?: string }) {
                 <div className=" rounded-full overflow-hidden sm:w-full ">
                   <Image src={man} alt="man" className="aspect-square w-full" />
                 </div>
-                <span className="h-8 w-8 rounded-full bg-blue-main flex justify-center items-center absolute bottom-0 right-0 sm:bottom-5 md:bottom-0">
+                <span className="h-8 w-8 rounded-full bg-blue-main flex justify-center items-center absolute bottom-0 right-0 sm:bottom-5 ">
                   <i className="text-white fa-solid fa-quote-left"></i>
                 </span>
               </div>
