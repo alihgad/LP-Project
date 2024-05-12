@@ -7,7 +7,7 @@ export default function Comment({ className }: { className?: string }) {
   return (
     <div className="">
       <Card
-        className={`md:mx-28  rounded-3xl bg-[#666666]   py-10 ${className}`}
+        className={`md:mx-28  rounded-3xl bg-[#666666] font-open   py-10 ${className}`}
       >
         <CardContent className="p-0">
           <div className="md:grid grid-cols-10 gap-x-10 sm:flex">

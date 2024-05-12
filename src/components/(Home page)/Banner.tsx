@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useKeenSlider } from "keen-slider/react";
 
 export default function Banner() {
-  const animation = { duration: 5000, easing: (t: number) => t };
+  const animation = { duration: 6000, easing: (t: number) => t };
 
   const [ref] = useKeenSlider<HTMLDivElement>({
     slides: {
@@ -14,7 +14,6 @@ export default function Banner() {
     mode: "snap",
     loop: true,
     renderMode: "performance",
-    // drag: false,
     created(s) {
       s.moveToIdx(5, true, animation);
     },
@@ -28,7 +27,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className="overflow-hidden bg-blue-banner py-5 font-open">
+      <div className="overflow-hidden bg-blue-banner py-4 md:py-8 font-open text-xl">
         <div ref={ref} className="keen-slider slider items-center">
           <div className="keen-slider__slide number-slide1">web developer</div>
           <Image

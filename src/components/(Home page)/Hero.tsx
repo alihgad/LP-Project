@@ -10,7 +10,7 @@ export default function Hero({
     <section id="home">
       <div className="h-screen  text-white ">
         <div className="sm:container px-3  text-center flex-col  flex justify-center items-center h-full">
-          <p className=" sm:w-full   font-bold text-3xl sm:font-[700]  sm:text-[65px] leading-[60px]">
+          <p className=" sm:w-full font-syne   font-bold text-3xl sm:font-[700]  sm:text-[65px] leading-[60px]">
             We Make Great Digital Products For
             <span className="text-blue-main ml-1">Innovative Brands. </span>
           </p>

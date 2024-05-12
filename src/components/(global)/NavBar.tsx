@@ -27,7 +27,7 @@ export default function NavBar({className}:{
 }) {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className={` text-black  z-50  bg-[rgba(0,0,0,0.8)] border-b ${className}`}>
+    <Disclosure as="nav" className={` text-black  z-50  bg-[rgba(0,0,0,0.8)] border-b font-open ${className}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
@@ -63,7 +63,7 @@ export default function NavBar({className}:{
                           path == item.href
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 text-sm font-medium font-syne"
                         )}
                         aria-current={path == item.href ? "page" : undefined}
                       >
@@ -80,7 +80,7 @@ export default function NavBar({className}:{
           </div>
 
           <DisclosurePanel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 font-open ">
               {navigation.map((item) => (
                 <DisclosureButton
                   key={item.name}
@@ -90,7 +90,7 @@ export default function NavBar({className}:{
                     item.current
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    "block rounded-md px-3 py-2 text-base font-medium  font-open "
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <section className="bg-[#1A1a1a] py-32 text-white ">
+      <section className="bg-[#1A1a1a] py-20 md:py-32 text-white ">
         <div className="container relative">
           <div className="w-5/6 text-lg">
-            <h5 className="mb-5 tracking-[0.4em] text-[#666666]"> ABOUT US</h5>
-            <p>
+            <h5 className="mb-5 tracking-[0.4em] text-[#666666] font-syne"> ABOUT US</h5>
+            <p className="font-open">
               At LA Projects, we are a dedicated development agency committed to
               creating exceptional digital experiences that drive success for
               our clients. With a passion for innovation and a team of skilled

@@ -21,25 +21,25 @@ export default function Services() {
             body="Let’s work together with our us"
           />
           <div className="mt-5 ">
-            <div className="grid md:grid-cols-9 gap-x-5 gap-y-5">
+            <div className="grid lg:grid-cols-9 gap-x-5 gap-y-5 font-open">
               <Card
                 id="card"
-                className="md:col-span-5  overflow-hidden hover ml-auto bg-[#262523] text-white  relative rounded-3xl h-fit group"
+                className="lg:col-span-5  overflow-hidden hover lg:ml-auto bg-[#262523] text-white  relative rounded-3xl h-fit group"
               >
                 <div
                   id="layer"
                   className="absolute top-0 right-0 left-0 bottom-0  z-10 group-hover:bg-[#615edf] duration-1000"
                 ></div>
 
-                <CardContent className="grid md:grid-cols-2 py-[40px] pl-[32px] relative ">
-                  <div className="text pr-5 font-open text-base font-light">
+                <CardContent className="grid p-0 pl-[15px] py-4 lg:py-[40px] lg:pl-[32px] relative ">
+                  <div className="lg:w-6/12 pr-5 font-open text-base font-light w-7/12">
                     <div id="icon-bg" className=" w-12 h-12 rounded-full   flex justify-center items-center mb-5 z-20 relative  ">
                       <Image src={world} alt="world" className=" relative z-20 text-white w-1/2"></Image>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5 relative z-20 ">
+                    <h3 className="text-2xl lg:text-4xl font-bold mb-5 relative z-20 w-10/12">
                       Website Dev
                     </h3>
-                    <p className=" mb-5 relative z-20">
+                    <p className=" mb-5 relative z-20 lg:text-xl text-[14px]">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
@@ -52,11 +52,11 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="hidden md:block   absolute right-0 top-10 z-20 ">
+                  <div className="absolute -right-20 bottom-0 lg:-right-4 lg:top-10 z-20 ">
                     <Image
                       src={display}
                       alt="desktop"
-                      className="w-full group-hover:bg-[#615edf] rounded-s-3xl transition-all duration-1000"
+                      className="group-hover:bg-[#615edf] rounded-t-2xl lg:rounded-s-3xl transition-all duration-1000 lg:w-full w-[240px]"
                     />
                   </div>
                 </CardContent>
@@ -64,21 +64,22 @@ export default function Services() {
 
               <Card
                 id="card"
-                className="md:col-span-4   overflow-hidden  ml-auto bg-[#262523] text-white  relative rounded-3xl group"
+                className="lg:col-span-4   overflow-hidden   bg-[#262523] text-white  relative rounded-3xl group"
               >
                 <div
                   id="layer"
                   className="absolute top-0 right-0 left-0 bottom-0  z-10 group-hover:bg-[#615edf] duration-1000"
                 ></div>
-                <CardContent className="md:grid py-[40px] pl-[32px] ">
-                  <div className="text md:w-7/12 ">
+
+                <CardContent className="grid p-0 py-5 pl-[15px] lg:py-[40px] lg:pl-[32px] ">
+                  <div className="text w-6/12 lg:w-8/12">
                     <div id="icon-bg" className="w-12 h-12 rounded-full  flex justify-center items-center mb-5 relative z-20">
                       <Image src={pen} alt="pen" className=" relative z-20 w-1/2"></Image>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5 relative z-20">
+                    <h3 className="text-2xl lg:text-4xl font-bold mb-5 relative z-20 w-12/12 ">
                       UI/UX Design
                     </h3>
-                    <p className="font-thin mb-5 relative z-20">
+                    <p className="lg:text-xl text-[14px] font-thin mb-5 relative z-20 lg:w-11/12">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
@@ -91,29 +92,29 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className=" hidden md:block absolute  right-0 top-15 z-20 ">
-                    <Image src={mobile} alt="mobile" className="" />
+                  <div className="  absolute lg:right-0 lg:bbottom-0  -right-8 top-10 z-20 ">
+                    <Image src={mobile} alt="mobile" className="w-10/12 lg:w-full" />
                   </div>
                 </CardContent>
               </Card>
 
               <Card
                 id="card"
-                className="md:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white   relative rounded-3xl group "
+                className="lg:col-span-4  overflow-hidden  ml-auto bg-[#262523] text-white   relative rounded-3xl group "
               >
                 <div
                   id="layer"
                   className="absolute top-0 right-0 left-0 bottom-0  z-10 group-hover:bg-[#615edf] duration-1000"
                 ></div>
-                <CardContent className="md:grid  py-[40px] pl-[32px] relative">
-                  <div className="text md:w-7/12 ">
+                <CardContent className="grid p-0 py-5 pl-[15px] lg:py-[40px] lg:pl-[32px] relative">
+                  <div className="text w-7/12 lg:w-7/12 ">
                     <div id="icon-bg" className="w-12 h-12 rounded-full  flex justify-center items-center mb-5 relative z-20">
                       <Image src={ai} alt="ai" className=" relative z-20 w-1/2"></Image>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5 relative z-20">
+                    <h3 className="text-2xl lg:text-4xl font-bold mb-5 relative z-20">
                       AI Integration
                     </h3>
-                    <p className="font-thin mb-5 relative z-20">
+                    <p className="lg:text-xl text-[14px] font-thin mb-5 relative z-20 lg:text-[19px]">
                       help you to build website company that is modern, user
                       friendly, good CEO, and Clean design
                     </p>
@@ -126,7 +127,7 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className=" hidden md:block absolute right-0 w-5/12  z-20">
+                  <div className="  absolute right-0 w-6/12 lg:w-5/12 lg:-bottom-6  z-20">
                     <Image src={AI} alt="AI" className=" " />
                   </div>
                 </CardContent>
@@ -134,23 +135,23 @@ export default function Services() {
 
               <Card
                 id="card"
-                className="md:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white  relative rounded-3xl h-fit group"
+                className="lg:col-span-5  overflow-hidden  ml-auto bg-[#262523] text-white  relative rounded-3xl h-fit group"
               >
                 <div
                   id="layer"
                   className="absolute top-0 right-0 left-0 bottom-0  z-10 group-hover:bg-[#615edf] duration-1000"
                 ></div>
 
-                <CardContent className="md:grid  py-[30px] pl-[32px] ">
-                  <div className="text md:w-5/12">
+                <CardContent className="lg:grid p-0 py-5 pl-[15px] lg:py-[40px] lg:pl-[32px] ">
+                  <div className="text w-6/12">
                     <div id="icon-bg" className="w-12 h-12 rounded-full  flex justify-center items-center mb-5 relative z-20">
                       <Image src={mob} alt="mob" className="relative z-20 w-1/2"></Image>
                     </div>
-                    <h3 className="text-4xl font-bold mb-5 relative z-20">
+                    <h3 className="text-2xl lg:text-4xl font-bold mb-5 relative z-20">
                       Mobile app development
                     </h3>
-                    <p className="font-[300] text-base mb-5 relative z-20">
-                      help you to build website company that is modern, user
+                    <p className="  text-base mb-5 relative z-20">
+                      help you to build website company that  modern, user
                       friendly, good CEO, and Clean design
                     </p>
                     <Link
@@ -162,7 +163,7 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="hidden md:block absolute right-0 top-10 z-20">
+                  <div className=" absolute -right-5 lg:right-0 bottom-0  z-20">
                     <Image
                       src={mobile}
                       alt="mobile"

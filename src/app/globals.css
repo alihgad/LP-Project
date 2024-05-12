@@ -272,7 +272,8 @@
   width: 100% !important;
   height: 375px !important;
 }
- 
+
+
 
 }
 
@@ -292,6 +293,35 @@
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
+}
+
+
+
+.work{
+  position: relative;
+
+}
+ 
+.work > .layer{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family: open-sans;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 1000%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 65%);
+  z-index: 1000;
+  transition-duration: 1s;
+}
+
+.work:hover .layer{
+  top: 0;
 }
 
 

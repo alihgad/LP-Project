@@ -7,7 +7,7 @@ import NavBar from "@/components/(global)/NavBar";
 import "keen-slider/keen-slider.min.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const open_sans = Open_Sans({
+const open = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open",
   weight : 'variable'
@@ -40,7 +40,7 @@ export default function RootLayout({
           )}
         >
           <NavBar className="fixed right-0 left-0" />
-          <main className={`${syne.className}  ${open_sans.className}`}>
+          <main>
             {children}
             <SpeedInsights />
           </main>
