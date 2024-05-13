@@ -81,7 +81,7 @@
   }
 
   #home > div {
-    background-image:  radial-gradient( transparent,transparent, black 85%);
+    background-image:  radial-gradient( transparent,transparent, black 80%);
   }
 
   .star{
@@ -324,8 +324,29 @@
   top: 0;
 }
 
+#about{
+  background-image: url('./../../public/about/hero.jpeg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.gray{
+  filter: grayscale(1) ;
+  -webkit-filter: grayscale(1) ;
+}
 
+.area{
+  grid-template-areas: 'l r';
+}
+
+.area > div:first-child {
+  grid-area: r;
+}
+
+.area > div:nth-child(2) {
+  grid-area: l;
+}
 
 
 

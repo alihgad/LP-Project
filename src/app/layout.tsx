@@ -6,18 +6,19 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import NavBar from "@/components/(global)/NavBar";
 import "keen-slider/keen-slider.min.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const open = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open",
-  weight : 'variable'
+  weight: "variable",
 });
 
 const syne = Syne({
   subsets: ["latin"],
   variable: "--font-syne",
-  weight : 'variable'
-
+  weight: "variable",
 });
 
 export const metadata: Metadata = {
@@ -39,12 +40,22 @@ export default function RootLayout({
             syne.className
           )}
         >
-          <NavBar className="fixed right-0 left-0" />
+          <NavBar className="fixed right-0 left-0">
+            <div className="absolute right-0 hidden sm:block top-3">
+              <Button className="bg-blue-main">Contact us</Button>
+            </div>
+          </NavBar>
           <main>
             {children}
             <SpeedInsights />
           </main>
-          <NavBar className=" bg-black border-black" />
+          <NavBar className=" bg-black items-center h-32 sm:h-20 " burger="hidden">
+            <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2   text-white">
+              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://facebook.com'}><i className="fa-brands fa-lg  ml-3 fa-facebook"></i></Link>
+              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://instagram.com'}> <i className="fa-brands fa-lg  ml-3 fa-instagram"></i></Link>
+              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://linkedin.com'}> <i className="fa-brands fa-lg  ml-3 fa-linkedin"></i></Link>
+            </div>
+          </NavBar>
         </body>
       </html>
     </>

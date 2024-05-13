@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import { Fragment, ReactNode, useState } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -22,17 +22,19 @@ function classNames(...classes: any[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NavBar({className}:{
-  className: string
+export default function NavBar({className , burger , children}:{
+  className: string,
+  burger? : string,
+  children?:ReactNode
 }) {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className={` text-black  z-50  bg-[rgba(0,0,0,0.8)] border-b font-open ${className}`}>
+    <Disclosure as="nav" className={` text-black py-2  z-50  bg-[rgba(0,0,0,0.8)] font-open ${className}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden ">
+              <div className={`absolute inset-y-0 left-0 flex items-center sm:hidden ${burger} `}>
                 {/* Mobile menu button*/}
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -44,8 +46,8 @@ export default function NavBar({className}:{
                   )}
                 </DisclosureButton>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
-                <div className="flex flex-shrink-0 items-center absolute left-0 top-1 ">
+              <div className="flex flex-1 items-center justify-center  ">
+                <div className="flex flex-shrink-0 items-center md:left-0 absolute  top-1 ">
                   <Image
                     className="h-12 w-auto"
                     src={logo}
@@ -72,9 +74,7 @@ export default function NavBar({className}:{
                     ))}
                   </div>
                 </div>
-                <div className="absolute right-0 hidden sm:block top-3">
-                  <Button className="bg-blue-main">Contact us</Button>
-                </div>
+                {children}
               </div>
             </div>
           </div>
