@@ -10,6 +10,7 @@ import logo from "./../../../public/logo.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -22,19 +23,29 @@ function classNames(...classes: any[]): string {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NavBar({className , burger , children}:{
-  className: string,
-  burger? : string,
-  children?:ReactNode
+export default function NavBar({
+  className,
+  burger,
+  children,
+}: {
+  className: string;
+  burger?: string;
+  children?: ReactNode;
 }) {
   const path = usePathname();
   return (
-    <Disclosure as="nav" className={` text-black py-2  z-50  bg-[rgba(0,0,0,0.8)] font-open ${className}`}>
+    <Disclosure
+      as="nav"
+      className={` text-black py-2  z-50  bg-[rgba(0,0,0,0.8)] font-open ${className}`}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
             <div className="relative flex h-16 items-center justify-between">
-              <div className={`absolute inset-y-0 left-0 flex items-center sm:hidden ${burger} `}>
+              
+              <div
+                className={`absolute inset-y-0 left-0 flex items-center sm:hidden ${burger} `}
+              >
                 {/* Mobile menu button*/}
                 <DisclosureButton className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
@@ -46,6 +57,7 @@ export default function NavBar({className , burger , children}:{
                   )}
                 </DisclosureButton>
               </div>
+
               <div className="flex flex-1 items-center justify-center  ">
                 <div className="flex flex-shrink-0 items-center md:left-0 absolute  top-1 ">
                   <Image
@@ -76,6 +88,7 @@ export default function NavBar({className , burger , children}:{
                 </div>
                 {children}
               </div>
+
             </div>
           </div>
 
@@ -97,9 +110,11 @@ export default function NavBar({className , burger , children}:{
                   {item.name}
                 </DisclosureButton>
               ))}
-              <div >
+              <div>
+                <Link href={'/contact'}>
                   <Button className="bg-blue-main w-full">Contact us</Button>
-                </div>
+                </Link>
+              </div>
             </div>
           </DisclosurePanel>
         </>
@@ -107,5 +122,3 @@ export default function NavBar({className , burger , children}:{
     </Disclosure>
   );
 }
-
-

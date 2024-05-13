@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import vision1 from "./../../../../public/about/vision1.jpeg";
-import vision2 from "./../../../../public/about/vision2.jpeg";
+import vision1 from "./../../../public/about/vision1.jpeg";
+import vision2 from "./../../../public/about/vision2.jpeg";
 import Link from "next/link";
 import SectionHeading from "./SectionHeading";
 
@@ -42,8 +42,8 @@ export default function Vision() {
                 className="gray absolute -bottom-10 left-5 lg:-bottom-8 lg:left-20 w-1/2 lg:w-64"
               />
               <Image src={vision2} alt="workwer" className="w-7/12  ml-auto " />
-              <div className="absolute top-0 left-0  h-2/5 w-5/12">
-                <span className="rounded-full bg-blue-main block absolute w-4 h-4 top-4 right-20 lg:w-5 lg:h-5 lg:right-36 lg:top-4"></span>
+              <div className="absolute top-0 left-0  h-2/5 w-5/12 sm:hidden xl:block">
+                <span className="rounded-full bg-blue-main block absolute w-4 h-4 top-3 right-20 lg:w-5 lg:h-5 lg:right-36 lg:top-4"></span>
                 <span className="rounded-full bg-blue-main block absolute w-6 h-6 lg:w-9 lg:h-9 right-12 bottom-12  lg:right-20 lg:bottom-20 "></span>
                 <span className="rounded-full bg-blue-main block absolute w-9 h-9 lg:w-12 lg:h-12 right-2 bottom-2 lg:right-4 lg:bottom-5"></span>
               </div>

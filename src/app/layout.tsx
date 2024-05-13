@@ -42,18 +42,43 @@ export default function RootLayout({
         >
           <NavBar className="fixed right-0 left-0">
             <div className="absolute right-0 hidden sm:block top-3">
-              <Button className="bg-blue-main">Contact us</Button>
+              <Link href={"/contact"} target="_blank">
+                <Button className="bg-blue-main">Contact us</Button>
+              </Link>
             </div>
           </NavBar>
           <main>
             {children}
             <SpeedInsights />
           </main>
-          <NavBar className=" bg-black items-center h-32 sm:h-20 " burger="hidden">
+          <NavBar
+            className=" bg-black items-center h-32 sm:h-20 "
+            burger="hidden"
+          >
             <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2   text-white">
-              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://facebook.com'}><i className="fa-brands fa-lg  ml-3 fa-facebook"></i></Link>
-              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://instagram.com'}> <i className="fa-brands fa-lg  ml-3 fa-instagram"></i></Link>
-              <Link className="hover:text-blue-main transition-all" target="_blank" href={'https://linkedin.com'}> <i className="fa-brands fa-lg  ml-3 fa-linkedin"></i></Link>
+              <Link
+                className="hover:text-blue-main transition-all"
+                target="_blank"
+                href={"https://facebook.com"}
+              >
+                <i className="fa-brands fa-lg  ml-3 fa-facebook"></i>
+              </Link>
+              <Link
+                className="hover:text-blue-main transition-all"
+                target="_blank"
+                href={"https://instagram.com"}
+              >
+                {" "}
+                <i className="fa-brands fa-lg  ml-3 fa-instagram"></i>
+              </Link>
+              <Link
+                className="hover:text-blue-main transition-all"
+                target="_blank"
+                href={"https://linkedin.com"}
+              >
+                {" "}
+                <i className="fa-brands fa-lg  ml-3 fa-linkedin"></i>
+              </Link>
             </div>
           </NavBar>
         </body>

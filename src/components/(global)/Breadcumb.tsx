@@ -8,7 +8,9 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export default function Bread() {
+export default function Bread({current}:{
+  current:string
+} ){
   return (
     <>
       <Breadcrumb className="z-10 ">
@@ -22,7 +24,7 @@ export default function Bread() {
           {/* <BreadcrumbSeparator /> */}
             <div className="flex mt-2   "><span className="w-1 h-1 bg-white rounded-full text-xs"></span></div>
           <BreadcrumbItem>
-            <BreadcrumbPage className="text-blue-main text-xs lg:text-base">About</BreadcrumbPage>
+            <BreadcrumbPage className="text-blue-main text-xs lg:text-base">{current}</BreadcrumbPage>
           </BreadcrumbItem>
           
         </BreadcrumbList>
