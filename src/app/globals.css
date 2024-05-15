@@ -348,6 +348,10 @@
   grid-area: l;
 }
 
+.width{
+  width: 100% !important;
+}
+
 
 
 
