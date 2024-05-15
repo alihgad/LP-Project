@@ -8,10 +8,11 @@ import useEmblaCarousel from 'embla-carousel-react'
 type PropType = {
   slides:any[],
   options?: EmblaOptionsType
+  className?:string
 }
 
 const EmblaCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props
+  const { slides, options ,className} = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
 
@@ -21,7 +22,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   )
 
   return (
-    <section className="embla">
+    <section className={`embla  ${className}`}>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((content,index) => (

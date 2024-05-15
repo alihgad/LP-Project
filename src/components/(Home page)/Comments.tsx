@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import SectionHeading from "../(global)/SectionHeading";
+import LargeSectionHeading from "../(global)/LargeSectionHeading";
 import { Card, CardContent } from "../ui/card";
 import man from "./../../../public/man.png";
 import Image from "next/image";
@@ -10,7 +10,7 @@ export default function Comments() {
     <>
       <section>
         <div className="container py-5 mt-10  ">
-          <SectionHeading
+          <LargeSectionHeading
             heading="our clients"
             body="what they say about us !"
           />

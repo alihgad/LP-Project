@@ -131,7 +131,7 @@
   top: 0;
   height: 100%;
   background-color: white;
-  width: 20%;
+  width: 19%;
   z-index: 1000;
 
 }
@@ -143,6 +143,30 @@
   top: 0;
   height: 100%;
   background-color: white;
+  width: 20%;
+  z-index: 1000;
+}
+
+
+.emblas::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: #eee !important;
+  width: 19%;
+  z-index: 1000;
+
+}
+
+.emblas::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #eee !important;
   width: 20%;
   z-index: 1000;
 }
@@ -350,6 +374,49 @@
 
 .width{
   width: 100% !important;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  background: url("https://assets.codepen.io/7344750/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1657025755&width=512");
+  background-size: cover;
+  border-radius: 100vmax;
+  background-position: center;
+}
+
+.texto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: consolas;
+  color: #000;
+  font-size: 17px;
+  animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.texto span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
 }
 
 

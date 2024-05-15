@@ -1,21 +1,13 @@
-'use client'
-import { cn } from "@/lib/utils"
-import { AnimatePresence , motion } from "framer-motion";
-import { StaticImageData } from "next/image";
-import Link from "next/link";
+"use client";
+import { cn } from "@/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
 import { ReactNode, useState } from "react";
 
 export const HoverEffect = ({
   items,
   className,
 }: {
-//   items: {
-//     src: any,
-//     title: string;
-//     description: string;
-//     link: string;
-//   }[];
-items:ReactNode[],
+  items: ReactNode[];
   className?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -52,11 +44,6 @@ items:ReactNode[],
             )}
           </AnimatePresence>
           {item}
-          {/* <Card> */}
-            {/* <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription> */}
-
-          {/* </Card> */}
         </div>
       ))}
     </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans, Syne } from "next/font/google";
+import { Open_Sans, Syne ,Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -12,6 +12,12 @@ import Link from "next/link";
 const open = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open",
+  weight: "variable",
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--Plus_Jakarta_Sans",
   weight: "variable",
 });
 

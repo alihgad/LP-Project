@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../(global)/SectionHeading";
+import LargeSectionHeading from "../(global)/LargeSectionHeading";
 import { Card, CardContent } from "../ui/card";
 import Image from "next/image";
 import second from "./../../../public/work/second.png";
@@ -14,7 +14,7 @@ export default function Work() {
       <section>
         <div className="container py-5">
           <div className="md:px-[60px] ">
-            <SectionHeading
+            <LargeSectionHeading
               heading="OUR WORK"
               body="Witness Our Success Stories"
             />

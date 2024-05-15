@@ -5,7 +5,6 @@ import About from "@/components/(Home page)/About";
 import Hero from "@/components/(Home page)/Hero";
 import Services from "@/components/(Home page)/Services";
 import Work from "@/components/(Home page)/Work";
-// import Comments from "@/components/(Home page)/Comments";
 import EmblaCarousel from "@/components/(Home page)/EmplaCarousal";
 import { EmblaOptionsType } from 'embla-carousel'
 import Comment from "@/components/(Home page)/Comment";

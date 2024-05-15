@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "./SectionHeading";
+import SmallSectionHeading from "../(global)/SmallSectionHeading";
 import mission from './../../../public/about/mission.jpeg'
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ export default function Mission() {
         <div className="container font-open">
           <div className="lg:grid grid-cols-2 gap-10 ">
             <div>
-              <SectionHeading />
+              <SmallSectionHeading title="VISSON & MISSION" />
               <h3 className="lg:text-5xl text-2xl font-semibold mb-4">
                 Creative minds dedicated to transforming businesses
               </h3>

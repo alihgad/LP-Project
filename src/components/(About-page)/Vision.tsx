@@ -3,7 +3,7 @@ import Image from "next/image";
 import vision1 from "./../../../public/about/vision1.jpeg";
 import vision2 from "./../../../public/about/vision2.jpeg";
 import Link from "next/link";
-import SectionHeading from "./SectionHeading";
+import SmallSectionHeading from "../(global)/SmallSectionHeading";
 
 export default function Vision() {
   return (
@@ -12,7 +12,7 @@ export default function Vision() {
         <div className="container">
           <div className="lg:grid lg:grid-cols-2 gap-6 area ">
             <div className="font-open py-8 ">
-              <SectionHeading/>
+              <SmallSectionHeading title="VISSON & MISSION" />
               <h3 className="lg:text-4xl text-2xl font-bold">
                 Get to know about
                 <span className="text-blue-main lg:block"> LA projects</span>

@@ -27,7 +27,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        // sans: ["var(--font-sans)", ...fontFamily.sans],
+        jakarta: ["Plus_Jakarta_Sans", ...fontFamily.sans],
         open : ["open-sans", ...fontFamily.sans],
         syne : ["var(--font-syne)", ...fontFamily.sans],
       },

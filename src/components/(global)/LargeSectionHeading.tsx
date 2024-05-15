@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SectionHeading({
+export default function LargeSectionHeading({
   heading,
   body,
 }: {
