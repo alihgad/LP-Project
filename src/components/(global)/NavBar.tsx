@@ -58,6 +58,7 @@ export default function NavBar({
                 </DisclosureButton>
               </div>
 
+
               <div className="flex flex-1 items-center justify-center  ">
                 <div className="flex flex-shrink-0 items-center md:left-0 absolute  top-1 ">
                   <Image

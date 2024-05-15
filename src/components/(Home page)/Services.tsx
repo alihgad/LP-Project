@@ -5,7 +5,7 @@ import Image from "next/image";
 import display from "./../../../public/Group1.svg";
 import mobile from "./../../../public/Group2.svg";
 import AI from "./../../../public/pngegg (5) copy 4 1.svg";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../(global)/SectionHeading";
 import world from './../../../public/LA icons/LA icons/site-alt.png'
 import pen from './../../../public/LA icons/LA icons/pen-nib.png'
 import ai from './../../../public/LA icons/LA icons/ai icon.png'

@@ -8,7 +8,7 @@ import SectionHeading from "./SectionHeading";
 export default function Vision() {
   return (
     <>
-      <section className="pb-20  lg:pt-12 bg-[#ddd]">
+      <section className="pb-20  lg:pt-12 ">
         <div className="container">
           <div className="lg:grid lg:grid-cols-2 gap-6 area ">
             <div className="font-open py-8 ">
@@ -35,13 +35,13 @@ export default function Vision() {
               </Link>
             </div>
 
-            <div className="relative ">
+            <div className="relative -left-3 sm:left-0 ">
               <Image
                 src={vision1}
                 alt="workwer"
                 className="gray absolute -bottom-10 left-5 lg:-bottom-8 lg:left-20 w-1/2 lg:w-64"
               />
-              <Image src={vision2} alt="workwer" className="w-7/12  ml-auto " />
+              <Image src={vision2} alt="workwer" className="w-7/12   ml-auto " />
               <div className="absolute top-0 left-0  h-2/5 w-5/12 sm:hidden xl:block">
                 <span className="rounded-full bg-blue-main block absolute w-4 h-4 top-3 right-20 lg:w-5 lg:h-5 lg:right-36 lg:top-4"></span>
                 <span className="rounded-full bg-blue-main block absolute w-6 h-6 lg:w-9 lg:h-9 right-12 bottom-12  lg:right-20 lg:bottom-20 "></span>

@@ -55,7 +55,7 @@ export default function RootLayout({
             className=" bg-black items-center h-32 sm:h-20 "
             burger="hidden"
           >
-            <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2   text-white">
+            <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2 mr-4 sm:mr-0   text-white">
               <Link
                 className="hover:text-blue-main transition-all"
                 target="_blank"
@@ -68,7 +68,6 @@ export default function RootLayout({
                 target="_blank"
                 href={"https://instagram.com"}
               >
-                {" "}
                 <i className="fa-brands fa-lg  ml-3 fa-instagram"></i>
               </Link>
               <Link
@@ -76,7 +75,6 @@ export default function RootLayout({
                 target="_blank"
                 href={"https://linkedin.com"}
               >
-                {" "}
                 <i className="fa-brands fa-lg  ml-3 fa-linkedin"></i>
               </Link>
             </div>

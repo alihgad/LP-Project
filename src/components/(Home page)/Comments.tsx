@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../(global)/SectionHeading";
 import { Card, CardContent } from "../ui/card";
 import man from "./../../../public/man.png";
 import Image from "next/image";
