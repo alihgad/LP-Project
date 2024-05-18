@@ -1,4 +1,4 @@
-import Choose from "@/components/(About-page)/Choose";
+import Choose from "@/components/(services)/Choose";
 import Header from "@/components/(global)/Header";
 import ServicesCards from "@/components/(services)/ServicesCards";
 import EmblaCarousel from "@/components/(Home page)/EmplaCarousal";

@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode, useEffect, useRef, useState } from "react";
 import SmallSectionHeading from "../(global)/SmallSectionHeading";
-import Check from "./Check";
+import Check from "../(About-page)/Check";
 import man from "@/../../public/services/man.jpeg";
 import Image from "next/image";
 
@@ -20,7 +20,7 @@ export default function Choose() {
                 <span className="lg:block">Services</span>
               </h4>
               <div className="checks mt-10">
-                <Check check={true} head="We think differently" />
+                <Check check={false} head="We think differently" />
                 <Check check={false} head="Cutting-Edge Technology" />
                 <Check check={false} head="Expertise and Experience" />
               </div>
@@ -34,9 +34,9 @@ export default function Choose() {
                     alt={"man"}
                     className="w-9/12 lg:w-10/12 rounded-[100%] "
                   />
-                  <div className="vedio w-32 h-32 lg:w-52 lg:h-52 bg-white absolute flex justify-center items-center rounded-full -bottom-10 left-0">
+                  <div className="group vedio w-32 h-32 lg:w-52 lg:h-52 bg-white absolute flex justify-center items-center rounded-full -bottom-10 left-0">
                     <div className="bg-[#615EDF]  rounded-[100%]">
-                      <i className="text-black fa-solid fa-arrow-circle-up text-6xl lg:text-8xl w-full h-full"></i>
+                      <i className="text-black fa-solid fa-arrow-circle-up text-6xl lg:text-8xl w-full h-full group-hover:rotate-90 transition-all duration-500"></i>
                     </div>
                   </div>
                 </div>

@@ -7,9 +7,9 @@ export default function Check({check , head , body}:{
 }) {
   return (
     <>
-      <div className="flex gap-x-4 my-6">
+      <div className="flex gap-x-8 my-6 group">
         <div className="mt-2">
-          <i className={`fa-solid fa-check-circle fa-xl ${ check ?  'text-[#615EDF]' : null}`}></i>
+          <i className={`fa-solid fa-check-circle fa-3x group-hover:bg-white transition-all duration-500 group-hover:text-[#615EDF] bg-[#615EDF] rounded-full  `}></i>
         </div>
         <div className="text font-open">
           <h6 className="text-2xl font-semibold">{head}</h6>

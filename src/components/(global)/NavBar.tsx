@@ -60,7 +60,7 @@ export default function NavBar({
 
 
               <div className="flex flex-1 items-center justify-center  ">
-                <div className="flex flex-shrink-0 items-center md:left-0 absolute  top-1 ">
+                <div className="flex flex-shrink-0 items-center sm:left-0 absolute  top-1 ">
                   <Image
                     className="h-12 w-auto"
                     src={logo}
