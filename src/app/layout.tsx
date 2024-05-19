@@ -8,6 +8,7 @@ import "keen-slider/keen-slider.min.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import SocialMedia from "@/components/(global)/SocialMedia";
 
 const open = Open_Sans({
   subsets: ["latin"],
@@ -61,7 +62,7 @@ export default function RootLayout({
             className=" bg-black items-center h-32 sm:h-20 "
             burger="hidden"
           >
-            <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2 mr-4 sm:mr-0   text-white">
+            {/* <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2 mr-4 sm:mr-0   text-white">
               <Link
                 className="hover:text-blue-main transition-all"
                 target="_blank"
@@ -83,7 +84,8 @@ export default function RootLayout({
               >
                 <i className="fa-brands fa-lg  ml-3 fa-linkedin"></i>
               </Link>
-            </div>
+            </div> */}
+            <SocialMedia/>
           </NavBar>
         </body>
       </html>
