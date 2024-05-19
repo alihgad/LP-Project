@@ -6,7 +6,7 @@ export default function Work() {
   return (
     <>
       <section className="my-10">
-        <div className="container">
+        <div className="container ">
           <LargeSectionHeading
             heading="OUR WORK"
             body="Our outstanding projects"
