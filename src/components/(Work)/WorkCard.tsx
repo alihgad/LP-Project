@@ -3,10 +3,12 @@ import React from "react";
 import image from "./../../../public/work/w.jpeg";
 import Link from "next/link";
 
-export default function WorkCard() {
+export default function WorkCard({aos}:{
+  aos:string;
+}) {
   return (
     <>
-      <div className="font-jakarta font-medium mx-auto   rounded-xl  overflow-hidden group">
+      <div className="font-jakarta font-medium mx-auto   rounded-xl  overflow-hidden group " data-aos={aos}>
         <div className="mx-auto  sm:w-[366px]  relative overflow-hidden">
           <div className=" absolute top-full group-hover:top-0 transition-all duration-500  h-full bottom-0 left-0 right-0 rounded-xl bg-[rgba(0,0,0,40%)] flex justify-center items-center ">
             <Link href={""}>

@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import SocialMedia from "@/components/(global)/SocialMedia";
+import { AOSInit } from './aos'
 
 const open = Open_Sans({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
+      <AOSInit />
         <body
           className={cn(
             "min-h-screen bg-background  antialiased ",
