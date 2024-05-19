@@ -42,7 +42,6 @@ export default function NavBar({
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 container">
             <div className="relative flex h-16 items-center justify-between">
-              
               <div
                 className={`absolute inset-y-0 left-0 flex items-center sm:hidden ${burger} `}
               >
@@ -57,7 +56,6 @@ export default function NavBar({
                   )}
                 </DisclosureButton>
               </div>
-
 
               <div className="flex flex-1 items-center justify-center  ">
                 <div className="flex flex-shrink-0 items-center sm:left-0 absolute  top-1 ">
@@ -76,9 +74,9 @@ export default function NavBar({
                         href={item.href}
                         className={classNames(
                           path == item.href
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium font-syne"
+                            ? " after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:absolute after:w-2 after:h-2 after:bg-gradient-to-tr after:from-[#854cff] after:to-[#170049] after:rounded-full text-white"
+                            : " text-gray-300 hover:after:-bottom-1 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:absolute hover:after:w-2 hover:after:h-2 hover:after:bg-gradient-to-tr hover:after:from-[#854cff] hover:after:to-[#170049] hover:after:rounded-full ",
+                          " px-3 py-2 text-sm font-medium font-syne relative "
                         )}
                         aria-current={path == item.href ? "page" : undefined}
                       >
@@ -89,7 +87,6 @@ export default function NavBar({
                 </div>
                 {children}
               </div>
-
             </div>
           </div>
 
@@ -101,18 +98,18 @@ export default function NavBar({
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
+                    path == item.href
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium  font-open "
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={path == item.href ? "page" : undefined}
                 >
                   {item.name}
                 </DisclosureButton>
               ))}
               <div>
-                <Link href={'/contact'}>
+                <Link href={"/contact"}>
                   <Button className="bg-blue-main w-full">Contact us</Button>
                 </Link>
               </div>
