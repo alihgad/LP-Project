@@ -4,6 +4,8 @@
 
   @layer base {
     :root {
+      --react-international-phone-font-size	:16px;
+
       --background: 0 0% 100%;
       --foreground: 222.2 84% 4.9%;
 
@@ -423,6 +425,13 @@
   transform-origin: 0 100px;
 }
 
+
+
+/* .react-international-phone-input{
+  width: 100% ;
+  font-family: sans-serif;
+  font-size: larger;
+} */
 
 
 

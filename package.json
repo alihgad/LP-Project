@@ -29,6 +29,7 @@
     "embla-carousel-react": "^8.0.4",
     "formik": "^2.4.6",
     "framer-motion": "^11.2.0",
+    "google-libphonenumber": "^3.2.34",
     "keen-slider": "^6.8.6",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
@@ -36,6 +37,7 @@
     "react": "^18.3.1",
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
+    "react-international-phone": "^4.2.9",
     "react-phone-number-input": "^3.4.1",
     "swiper": "^11.1.1",
     "tailwind-merge": "^2.3.0",
@@ -44,6 +46,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@types/google-libphonenumber": "^7.4.30",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
