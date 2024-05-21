@@ -427,11 +427,94 @@
 
 
 
-/* .react-international-phone-input{
-  width: 100% ;
-  font-family: sans-serif;
-  font-size: larger;
-} */
+.circle_1 {
+  transform: rotate(15.652173913deg);
+}
 
+.circle_2 {
+  transform: rotate(31.3043478261deg);
+}
 
+.circle_3 {
+  transform: rotate(46.9565217391deg);
+}
 
+.circle_4 {
+  transform: rotate(62.6086956522deg);
+}
+
+.circle_5 {
+  transform: rotate(78.2608695652deg);
+}
+
+.circle_6 {
+  transform: rotate(93.9130434783deg);
+}
+
+.circle_7 {
+  transform: rotate(109.5652173913deg);
+}
+
+.circle_8 {
+  transform: rotate(125.2173913043deg);
+}
+
+.circle_9 {
+  transform: rotate(140.8695652174deg);
+}
+
+.circle_10 {
+  transform: rotate(156.5217391304deg);
+}
+
+.circle_11 {
+  transform: rotate(172.1739130435deg);
+}
+
+.circle_12 {
+  transform: rotate(187.8260869565deg);
+}
+
+.circle_13 {
+  transform: rotate(203.4782608696deg);
+}
+
+.circle_14 {
+  transform: rotate(219.1304347826deg);
+}
+
+.circle_15 {
+  transform: rotate(234.7826086957deg);
+}
+
+.circle_16 {
+  transform: rotate(250.4347826087deg);
+}
+
+.circle_17 {
+  transform: rotate(266.0869565217deg);
+}
+
+.circle_18 {
+  transform: rotate(281.7391304348deg);
+}
+
+.circle_19 {
+  transform: rotate(297.3913043478deg);
+}
+
+.circle_20 {
+  transform: rotate(313.0434782609deg);
+}
+
+.circle_21 {
+  transform: rotate(328.6956521739deg);
+}
+
+.circle_22 {
+  transform: rotate(344.347826087deg);
+}
+
+.circle_23 {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=circle.module.css.map */

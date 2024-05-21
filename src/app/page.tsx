@@ -22,7 +22,7 @@ export default function Home() {
       <About />
       <Services/>
       <Work/>
-      <EmblaCarousel slides={SLIDES}  options={OPTIONS}/>
+      {/* <EmblaCarousel slides={SLIDES}  options={OPTIONS}/> */}
     </>
   );
 }

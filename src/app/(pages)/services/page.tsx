@@ -23,7 +23,7 @@ export default function services() {
       <div className="bg-[#eee] ">
         <ServicesCards />
         <Choose />
-        <EmblaCarousel className="emblas  " slides={SLIDES} options={OPTIONS} />
+        {/* <EmblaCarousel className="emblas  " slides={SLIDES} options={OPTIONS} /> */}
       </div>
     </>
   );
