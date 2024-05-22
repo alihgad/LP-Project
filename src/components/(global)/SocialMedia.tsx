@@ -4,7 +4,7 @@ import React from "react";
 export default function SocialMedia() {
   return (
     <>
-      <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2 mr-4 sm:mr-0   text-white -ml-[18px]">
+      <div className="sm:absolute mt-24 sm:mt-0 right-0  sm:top-1/2 sm:-translate-y-1/2 mr-4 sm:mr-0   text-white ml-1 md:-ml-[18px]">
         <Link
           className="hover:text-blue-main transition-all"
           target="_blank"

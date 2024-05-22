@@ -30,7 +30,7 @@ export default function Hero({
               Book a call
             </Button>
           </div>
-          <section className="absolute -bottom-12 right-0 left-0">{children}</section>
+          <section className="absolute -bottom-9 md:-bottom-14 right-0 left-0">{children}</section>
         </div>
       </div>
     </section>

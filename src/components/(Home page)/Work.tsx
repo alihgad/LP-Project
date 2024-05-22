@@ -18,9 +18,9 @@ export default function Work() {
               heading="OUR WORK"
               body="Witness Our Success Stories"
             />
-            <div className="flex-col md:flex-row flex md:cont">
+            <div className="flex-col md:flex-row flex md:cont mt-5">
 
-              <div className="md:w-50 px-5">
+              <div className="md:w-50 md:px-5">
                 <div className="md:first work row-span-3 rounded-xl overflow-hidden mb-5">
                   <div className="layer transition-all  ">
                     <Link target="_blank" href={"/work"}>
@@ -30,7 +30,7 @@ export default function Work() {
                       </div>
                     </Link>
                   </div>
-                  <Image src={second} alt="second" className="first " />
+                  <Image src={second} alt="second" className="first " loading="lazy" />
                 </div>
 
                 <div className="md:therd work row-span-3 rounded-xl overflow-hidden md:mb-0 mb-5">
@@ -42,12 +42,12 @@ export default function Work() {
                       </div>
                     </Link>
                   </div>
-                  <Image src={therd} alt="second" className="therd" />
+                  <Image src={therd} alt="second" className="therd" loading="lazy" />
                 </div>
 
               </div>
 
-              <div className="w-50 px-5">
+              <div className="w-50 md:px-5">
 
                 <div className="md:second work row-span-2 rounded-xl overflow-hidden mb-5">
                   <div className="layer transition-all  ">
@@ -58,7 +58,7 @@ export default function Work() {
                       </div>
                     </Link>
                   </div>
-                  <Image src={second} alt="second" className="second" />
+                  <Image src={second} alt="second" className="second" loading="lazy" />
                 </div>
 
                 <div className="md:fourth work row-span-2 rounded-xl overflow-hidden  mb-5">
@@ -70,7 +70,7 @@ export default function Work() {
                       </div>
                     </Link>
                   </div>
-                  <Image src={fourth} alt="second" className="fourth" />
+                  <Image src={fourth} alt="second" className="fourth " loading={'lazy'} />
                 </div>
 
               </div>

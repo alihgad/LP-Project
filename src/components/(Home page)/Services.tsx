@@ -52,9 +52,10 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="absolute -right-20 bottom-0 lg:-right-4 lg:top-10 z-20 ">
+                  <div className="absolute -right-24 bottom-0 lg:-right-4 lg:top-10 z-20 ">
                     <Image
                       src={display}
+                      loading="lazy"
                       alt="desktop"
                       className="group-hover:bg-[#615edf] rounded-t-2xl lg:rounded-s-3xl transition-all duration-1000 lg:w-full w-[240px]"
                     />
@@ -92,7 +93,7 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className="  absolute lg:right-0 lg:bbottom-0  -right-8 top-10 z-20 ">
+                  <div className="  absolute lg:right-0 lg:bbottom-0  -right-10 top-10 z-20 ">
                     <Image src={mobile} alt="mobile" className="w-10/12 lg:w-full" />
                   </div>
                 </CardContent>
@@ -163,7 +164,7 @@ export default function Services() {
                       <i className="fa-solid fa-arrow-up rotate-45"></i>
                     </Link>
                   </div>
-                  <div className=" absolute -right-5 lg:right-0 bottom-0  z-20">
+                  <div className=" absolute -right-9 lg:right-0 bottom-0  z-20">
                     <Image
                       src={mobile}
                       alt="mobile"

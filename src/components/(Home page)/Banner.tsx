@@ -43,14 +43,16 @@ export default function Banner() {
             alt="star"
             className="keen-slider__slide number-slide4 star"
           />
-          <div className="keen-slider__slide number-slide5">ai integration</div>
+          <div className="keen-slider__slide number-slide5">
+            ai integration
+          </div>
           <Image
             src={star}
             alt="star"
             className="keen-slider__slide number-slide6 star"
           />
           <div className="keen-slider__slide number-slide7">
-            software development{" "}
+            software development
           </div>
           <Image
             src={star}
@@ -58,7 +60,7 @@ export default function Banner() {
             className="keen-slider__slide number-slide8 star"
           />
           <div className="keen-slider__slide number-slide9">
-            software development{" "}
+            UI/UX design
           </div>
           <Image
             src={star}
@@ -66,7 +68,7 @@ export default function Banner() {
             className="keen-slider__slide number-slide10 star"
           />
           <div className="keen-slider__slide number-slide11">
-            software development{" "}
+            Web development
           </div>
           <Image
             src={star}
