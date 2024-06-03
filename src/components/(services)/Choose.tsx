@@ -20,9 +20,21 @@ export default function Choose() {
                 <span className="md:block">Services</span>
               </h4>
               <div className="checks mt-10">
-                <Check check={false} head="We think differently" />
-                <Check check={false} head="Cutting-Edge Technology" />
-                <Check check={false} head="Expertise and Experience" />
+                <Check
+                  body="Our innovative approach ensures top-quality services tailored to your unique needs. We focus on creativity and efficiency to deliver exceptional results that set you apart."
+                  check={false}
+                  head="We think differently"
+                />
+                <Check
+                  body="We utilize the latest technologies to provide advanced solutions. From AI integration to mobile app development, our tech-savvy team is equipped to handle all your digital needs."
+                  check={false}
+                  head="Cutting-Edge Technology"
+                />
+                <Check
+                  body="We prioritize excellence in every project. Our solutions are crafted with meticulous attention to detail, ensuring the highest standards of quality for your business."
+                  check={false}
+                  head="Quality You Can Rely On"
+                />
               </div>
             </div>
 
@@ -36,7 +48,7 @@ export default function Choose() {
                   />
                   <div className="group vedio w-32 h-32 md:w-52 md:h-52  bg-white absolute flex justify-center items-center rounded-full -bottom-10 left-0">
                     <div className="absolute ">
-                      <Circle/>
+                      <Circle />
                     </div>
                     <div className="bg-[#615EDF]  rounded-[100%]">
                       <i className="text-black fa-solid fa-arrow-circle-up text-6xl md:text-8xl w-full h-full group-hover:rotate-90 transition-all duration-500"></i>
