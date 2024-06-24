@@ -78,7 +78,7 @@ export default function Work() {
             </div>
           </div>
           <div className="flex justify-center">
-            <Button className="bg-blue-main">see all projects</Button>
+            <Button className="bg-blue-main"> Get a Demo</Button>
           </div>
         </div>
       </section>

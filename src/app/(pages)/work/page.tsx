@@ -9,8 +9,8 @@ export default function Work() {
       <section className="my-10">
         <div className="container ">
           <LargeSectionHeading
-            heading="OUR WORK"
-            body="Our outstanding projects"
+            heading=" Our Achievements"
+            body=" Previous Partner Projects"
           />
           <div className="grid sm:grid-cols-2  lg:grid-cols-3 mt-6 gap-x-16 gap-y-6">
           <WorkCard aos="fade-right"/>

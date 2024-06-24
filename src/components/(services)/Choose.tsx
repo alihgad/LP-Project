@@ -16,24 +16,30 @@ export default function Choose() {
             <div className="text">
               <SmallSectionHeading title="WHY CHOOSE US" />
               <h4 className="font-open text-2xl md:text-3xl font-bold">
-                Providing The <span className="text-blue-main"> Best </span>
-                <span className="md:block">Services</span>
+                A digital <span className="text-blue-main"> Allys </span>
+                <span className="md:block"> at your fingertip</span>
               </h4>
               <div className="checks mt-10">
                 <Check
-                  body="Our innovative approach ensures top-quality services tailored to your unique needs. We focus on creativity and efficiency to deliver exceptional results that set you apart."
+                  body="
+                  Our main goal is to provide digital solutions tailored to your needs. We care about every detail, bringing 
+                  innovation to your fingertips. With your feedback at every step, we ensure complete satisfaction.
+                  "
                   check={false}
-                  head="We think differently"
+                  head="Your Success, Our Priority"
                 />
                 <Check
-                  body="We utilize the latest technologies to provide advanced solutions. From AI integration to mobile app development, our tech-savvy team is equipped to handle all your digital needs."
+                  body=" At the heart of our services is your excellence. From AI integration to mobile app development, our tech
+                          savvy team tackles your most complex requests with precision and care."
                   check={false}
-                  head="Cutting-Edge Technology"
+                  head=" Our Difference: You Come First"
                 />
                 <Check
-                  body="We prioritize excellence in every project. Our solutions are crafted with meticulous attention to detail, ensuring the highest standards of quality for your business."
+                  body="Each solution is meticulously crafted, backed by developers with top certifications and qualifications. Our 
+constantly updated knowledge ensures your digital needs are met with the utmost safety and expertise. 
+Trust us for your digital journey."
                   check={false}
-                  head="Quality You Can Rely On"
+                  head=" Pioneering Innovation, Optimal Solutions"
                 />
               </div>
             </div>

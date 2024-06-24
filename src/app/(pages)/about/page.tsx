@@ -11,7 +11,7 @@ export default function page() {
       <div className="bg-[#ddd]">
         <Vision />
         <Mission />
-        <Team/>
+        {/* <Team/> */}
       </div>
     </>
   );

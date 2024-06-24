@@ -8,25 +8,23 @@ export default function About() {
       <section className="bg-[#1A1a1a] py-20 md:py-32 text-white ">
         <div className="container relative">
           <div className="w-5/6 text-lg">
-            <h5 className="mb-5 tracking-[0.4em] text-[#666666] font-syne">
+            <h5 className="mb-5 tracking-[0.4em] text-[#969595] font-syne">
               {" "}
-              ABOUT US
+              Your Ultimate Digital Partner
             </h5>
             <p className="font-open">
-              At LA Projects, we're a dynamic team of tech enthusiasts,
-              passionate about transforming businesses through innovation.
-              Specializing in custom software development, AI integration, and
-              app creation, we thrive on crafting tailored solutions that drive
-              efficiency and keep our clients ahead of the curve. With a
-              commitment to simplicity and a pulse on industry trends, we're
-              dedicated to empowering businesses to thrive in today's digital
-              landscape. Choose LA Projects for cutting-edge solutions and a
-              partner committed to your success.
+              At LA Projects, we deliver unparalleled dynamic software solutions
+              in Web Development, AI Integration, Mobile App Development, and
+              UI/UX Design. Our customer-centric approach ensures your feedback
+              is valued at every step, providing simple, efficient, and
+              up-to-date features. Enhance engagement, streamline operations,
+              and drive growth with LA Projects—the single asset you need for
+              unrivaled digital success.
             </p>
           </div>
           <div className="relative container">
             <Button className=" bg-blue-main  rounded-xl right-0 mr-2 absolute">
-              <Link href={"/about"}>About us</Link>
+              <Link href={"/about"}> Learn More</Link>
             </Button>
           </div>
         </div>

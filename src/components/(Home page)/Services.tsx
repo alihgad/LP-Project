@@ -17,8 +17,8 @@ export default function Services() {
       <section className="bg-white py-28">
         <div className="container">
           <LargeSectionHeading
-            heading="OUR SERCIVES"
-            body="Let’s work together with our us"
+            heading="Our Solutions"
+            body=" Deciphering your obstacles, one-of-a-kind solutions"
           />
           <div className="mt-5 ">
             <div className="grid lg:grid-cols-9 gap-x-5 gap-y-5 font-open">

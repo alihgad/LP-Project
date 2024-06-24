@@ -11,26 +11,33 @@ export default function Hero({
       <div className="h-screen  text-white ">
         <div className="sm:container px-3  text-center flex-col  flex justify-center items-center h-full">
           <p className=" sm:w-full font-syne   font-bold text-3xl sm:font-[700]  sm:text-[65px] leading-[60px]">
-            We Make Great Digital Products For
-            <span className="text-blue-main ml-1">Innovative Brands. </span>
+            Transform Your
+            <span className="text-blue-main ml-1">Digital Experience </span>
+            Today
           </p>
           <p className="sm:text-lg sm:font-medium sm:w-[65%] mt-7 font-open">
-            we specialize in providing cutting-edge solutions for all your
-            technological needs. With our team of skilled professionals and a
-            passion for innovation, we help businesses transform their ideas
-            into reality
+            Tired of mediocre websites and poor client retention? At LA
+            Projects, we specialize in web solutions, AI integration, mobile
+            apps, and UI/UX design. Your feedback drives our process, ensuring
+            exceptional results every step of the way. Trust us to be your
+            ultimate digital partner.
           </p>
           <div className="flex w-full max-w-sm items-center space-x-2 mt-5 ">
             <Input
               type="email"
-              placeholder="Your work Email"
+              placeholder="Your Email Address"
               className="bg-transparent rounded-[15px]"
             />
-            <Button type="submit" className="bg-transparent border border-blue-main rounded-[15px] text-blue-main">
+            <Button
+              type="submit"
+              className="bg-transparent border border-blue-main rounded-[15px] text-blue-main"
+            >
               Book a call
             </Button>
           </div>
-          <section className="absolute -bottom-9 md:-bottom-14 right-0 left-0">{children}</section>
+          <section className="absolute -bottom-9 md:-bottom-14 right-0 left-0">
+            {children}
+          </section>
         </div>
       </div>
     </section>
