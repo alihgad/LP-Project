@@ -8,73 +8,159 @@ import { Button } from "../ui/button";
 import { Textarea } from "@headlessui/react";
 import { PhoneInput } from "../ui/PhoneInput";
 import ChickBox from "./ChickBox";
+import PhoneNumberInput from "./PhoneNumberInput";
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import { ChangeEvent, useState } from "react";
+import { Checkbox } from "@/components/ui/checkbox";
+
+interface CheckboxState {
+  websiteDesign: boolean;
+  contentCreation: boolean;
+  uxdesign: boolean;
+  strategyConsulting: boolean;
+  userResearch: boolean;
+  other: boolean;
+}
 
 export default function Form() {
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-    validationSchema: Yup.object({
-      name: Yup.string()
-        .max(15, "Must be 15 characters or less")
-        .required("Required"),
-      email: Yup.string()
-        .email("Invalid email address")
-        .required("Required")
-        .required("Required"),
-      phone: Yup.string().required("Phone number is required"),
-    }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-      formik.resetForm();
-    },
+  const {
+    register,
+    setValue,
+    getValues,
+    control,
+    handleSubmit,
+    formState: { errors, isSubmitted },
+  } = useForm<FieldValues>();
+
+
+  const [checkboxState, setCheckboxState] = useState<CheckboxState>({
+    websiteDesign: false,
+    contentCreation: false,
+    uxdesign: false,
+    strategyConsulting: false,
+    userResearch: false,
+    other: false,
   });
 
+  const handleCheckboxChange = (name: string, checked: boolean) => {
+    setValue(name, checked);
+    setCheckboxState((prevState) => ({
+      ...prevState,
+      [name]: checked,
+    }));
+  };
+
+  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+    console.log(data);
+    alert(JSON.stringify(data, null, 2));
+  };
+
+
+  
+
+
   return (
-    <form onSubmit={formik.handleSubmit} className="flex flex-col form">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col form">
       <Label f="name" label="Name" />
-      <Input id="name" type="text" {...formik.getFieldProps("name")} />
-      {formik.touched.name && formik.errors.name ? (
-        <div className="mt-2 text-red-500">{formik.errors.name}</div>
-      ) : null}
+      <Input
+        id="name"
+        type="text"
+        {...register("name", { required: true, maxLength: 15 })}
+      />
+
+      {errors.name && (
+        <div className="mt-2 text-red-500">Must be 15 characters or less</div>
+      )}
 
       <Label f="email" label="Email" />
-      <Input id="email" type="email" {...formik.getFieldProps("email")} />
-      {formik.touched.email && formik.errors.email ? (
-        <div className="mt-2 text-red-500">{formik.errors.email}</div>
-      ) : null}
+      <Input
+        id="email"
+        type="email"
+        {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
+      />
+
+      {errors.email && (
+        <div className="mt-2 text-red-500">Invalid email address</div>
+      )}
 
       <Label f="phone" label="Phone" />
-      <PhoneInput    id="phone" type="phone" {...formik.getFieldProps("phone")}/>
-      {formik.touched.phone && formik.errors.phone ? (
-        <div className="mt-2 text-red-500">{formik.errors.phone}</div>
-      ) : null}
-
-
-
+      <PhoneNumberInput
+        control={control}
+        setValue={setValue}
+        id="phoneNumber"
+        errors={errors}
+        isSubmitted={isSubmitted}
+      />
+      {errors.phone && (
+        <div className="mt-2 text-red-500">Invalid phone number</div>
+      )}
 
       <Label f="message" label="How can we help?" />
-      <Textarea id="message" {...formik.getFieldProps("message")} cols={15} rows={10} />
-      
-
+      <Textarea
+        id="message"
+        {...register("message", { required: true })}
+        cols={15}
+        rows={10}
+      />
 
       <div className="mt-10">
         <p className="font-bold font-jakarta mb-2">services</p>
         <div className="grid grid-cols-2 grid-rows-3 font-jakarta">
-        <ChickBox id="websiteDesign" content="Website design"/>
-        <ChickBox id="contentCreation" content="Content creation"/>
-        <ChickBox id="uxdesign" content="UX design"/>
-        <ChickBox id="Strategy&consulting" content="Strategy & consulting"/>
-        <ChickBox id="userResearch" content="User research"/>
-        <ChickBox id="other" content="other"/>
+
+          <ChickBox
+            onChange={(checked:boolean) => handleCheckboxChange("websiteDesign", checked)}
+            checked={getValues("websiteDesign")}
+            register={register("websiteDesign")}
+            id="websiteDesign"
+            content="Website design"
+            
+          />
+          <ChickBox
+            id="contentCreation"
+            content="Content creation"
+            onChange={(checked:boolean) => handleCheckboxChange("contentCreation", checked)}
+            checked={getValues("contentCreation")}
+            register={register("contentCreation")}
+            
+          />
+
+          <ChickBox  
+            id="uxdesign" 
+            content="UX design" 
+            onChange={(checked:boolean) => handleCheckboxChange("uxdesign", checked)}
+            checked={getValues("uxdesign")}
+            register={register("uxdesign")}
+          />
+
+          <ChickBox
+            id="strategyConsulting"
+            content="Strategy & consulting"
+            onChange={(checked:boolean) => handleCheckboxChange("strategyConsulting", checked)}
+            checked={getValues("strategyConsulting")}
+            register={register("strategyConsulting")}
+            
+          />
+          <ChickBox
+            id="userResearch"
+            content="User research"
+            onChange={(checked:boolean) => handleCheckboxChange("userResearch", checked)}
+            checked={getValues("userResearch")}
+            register={register("userResearch")}
+            
+          />
+          <ChickBox
+            id="other"
+            content="other"
+            onChange={(checked:boolean) => handleCheckboxChange("other", checked)}
+            checked={getValues("other")}
+            register={register("other")}
+            
+          />
         </div>
       </div>
 
       <Button type="submit" className=" bg-blue-main mt-10 font-syne">
-      Send a message
+        Send a message
       </Button>
     </form>
   );

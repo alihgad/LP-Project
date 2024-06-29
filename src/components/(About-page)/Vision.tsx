@@ -12,12 +12,13 @@ export default function Vision() {
         <div className="container">
           <div className="lg:grid lg:grid-cols-2 gap-6 area ">
             <div className="font-open py-8 ">
-              <SmallSectionHeading title="ABOUT US" />
+              <div className="mb-5">
+                <SmallSectionHeading title="ABOUT US" />
+              </div>{" "}
               <h3 className="lg:text-4xl text-2xl font-bold -mt-5">
                 Crafting with your needs
                 <span className="text-blue-main lg:block"> in mind</span>
               </h3>
-
               <p className="font-[400] text-base mt-2 text-muted-foreground">
                 Here at LA projects we are ready to take on your challenge and
                 provide you with unparalleled dynamic software solutions,
@@ -56,8 +57,6 @@ export default function Vision() {
                 <span className="rounded-full bg-blue-main block absolute w-9 h-9 lg:w-12 lg:h-12 right-2 bottom-2 lg:right-4 lg:bottom-5"></span>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>

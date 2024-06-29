@@ -16,7 +16,7 @@ export default function Choose() {
             <div className="text">
               <SmallSectionHeading title="WHY CHOOSE US" />
               <h4 className="font-open text-2xl md:text-3xl font-bold">
-                A digital <span className="text-blue-main"> Allys </span>
+                A digital <span className="text-blue-main"> Ally </span>
                 <span className="md:block"> at your fingertip</span>
               </h4>
               <div className="checks mt-10">

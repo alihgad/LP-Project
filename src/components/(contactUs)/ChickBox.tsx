@@ -1,20 +1,29 @@
-"use client"
+interface ChickBoxProps {
+  onChange: (checked: boolean) => void;
+  checked: boolean;
+  register: any;
+  id: string;
+  content: string;
+}
 
-import { Checkbox } from "@/components/ui/checkbox"
 
-export default function ChickBox({id , content}:{
-    id:string,
-    content:string
-}) {
+const ChickBox = ({ onChange, checked, register, id, content }: ChickBoxProps) => {
   return (
-    <div className="flex items-center space-x-2 my-2">
-      <Checkbox id={`${id}`} />
-      <label
-        htmlFor={`${id}`}
-        className="text-base font-medium text-muted-foreground leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-      >
+    <div className="flex items-center">
+      <input
+        type="checkbox"
+        id={id}
+        className="mr-2"
+        {...register}
+        checked={checked}
+        onChange={(e) => onChange(e.target.checked)}
+      />
+      <label htmlFor={id} className="font-normal">
         {content}
       </label>
     </div>
-  )
-}
+  );
+};
+
+
+export default ChickBox
