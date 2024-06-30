@@ -52,7 +52,7 @@ export default function Form() {
 
 
     try {
-      const response = await fetch("http://localhost:3000/hello", {
+      const response = await fetch("https://lp-project-pied.vercel.app/hello", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,6 +1,10 @@
-// export async function GET(){
-//     return new Response("hello world")
-// }
+export async function GET(){
+    return new Response("hello world")
+}
+
+
+import cors from "cors"
+cors()
 
 import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
@@ -13,6 +17,7 @@ interface FormData {
 
 export async function POST(req: Request, res: Response) {
   if (req.method === "POST") {
+    cors()
     const data: FormData = await req.json();
 
     // return new Response('d')
