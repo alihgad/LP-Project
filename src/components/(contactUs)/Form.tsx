@@ -1,17 +1,12 @@
 "use client";
-import { useFormik } from "formik";
-import * as Yup from "yup";
 import { Input } from "./../ui/input";
-import { FormLabel } from "../ui/form";
 import Label from "./Label";
 import { Button } from "../ui/button";
 import { Textarea } from "@headlessui/react";
-import { PhoneInput } from "../ui/PhoneInput";
 import ChickBox from "./ChickBox";
 import PhoneNumberInput from "./PhoneNumberInput";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import { ChangeEvent, useState } from "react";
-import { Checkbox } from "@/components/ui/checkbox";
+import { useState } from "react";
 
 interface CheckboxState {
   websiteDesign: boolean;
@@ -50,14 +45,31 @@ export default function Form() {
     }));
   };
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log(data);
-    alert(JSON.stringify(data, null, 2));
+  const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+    let name = data.name
+    let email = data.email
+    let message = data.message
+
+
+    try {
+      const response = await fetch("http://localhost:3000/hello", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert ("email sent successfully");
+      } else {
+        alert("Error sending email. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Error submitting form. Please try again later.");
+    }
   };
-
-
-  
-
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col form">
@@ -106,28 +118,31 @@ export default function Form() {
       <div className="mt-10">
         <p className="font-bold font-jakarta mb-2">services</p>
         <div className="grid grid-cols-2 grid-rows-3 font-jakarta">
-
           <ChickBox
-            onChange={(checked:boolean) => handleCheckboxChange("websiteDesign", checked)}
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("websiteDesign", checked)
+            }
             checked={getValues("websiteDesign")}
             register={register("websiteDesign")}
             id="websiteDesign"
             content="Website design"
-            
           />
           <ChickBox
             id="contentCreation"
             content="Content creation"
-            onChange={(checked:boolean) => handleCheckboxChange("contentCreation", checked)}
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("contentCreation", checked)
+            }
             checked={getValues("contentCreation")}
             register={register("contentCreation")}
-            
           />
 
-          <ChickBox  
-            id="uxdesign" 
-            content="UX design" 
-            onChange={(checked:boolean) => handleCheckboxChange("uxdesign", checked)}
+          <ChickBox
+            id="uxdesign"
+            content="UX design"
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("uxdesign", checked)
+            }
             checked={getValues("uxdesign")}
             register={register("uxdesign")}
           />
@@ -135,26 +150,29 @@ export default function Form() {
           <ChickBox
             id="strategyConsulting"
             content="Strategy & consulting"
-            onChange={(checked:boolean) => handleCheckboxChange("strategyConsulting", checked)}
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("strategyConsulting", checked)
+            }
             checked={getValues("strategyConsulting")}
             register={register("strategyConsulting")}
-            
           />
           <ChickBox
             id="userResearch"
             content="User research"
-            onChange={(checked:boolean) => handleCheckboxChange("userResearch", checked)}
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("userResearch", checked)
+            }
             checked={getValues("userResearch")}
             register={register("userResearch")}
-            
           />
           <ChickBox
             id="other"
             content="other"
-            onChange={(checked:boolean) => handleCheckboxChange("other", checked)}
+            onChange={(checked: boolean) =>
+              handleCheckboxChange("other", checked)
+            }
             checked={getValues("other")}
             register={register("other")}
-            
           />
         </div>
       </div>

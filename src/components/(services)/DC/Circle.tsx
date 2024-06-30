@@ -9,7 +9,7 @@ export default function Circle() {
         <div className={styles.container}>
           {arr.map((char , i) =>{
             return <>
-            <span key={i} className={`font-jakarta text-base font-medium ${styles.circle} ${`circle_${i+1}`}`}>{char}</span>
+            <span key={char} className={`font-jakarta text-base font-medium ${styles.circle} ${`circle_${i+1}`}`}>{char}</span>
             </>
           })}
         </div>
